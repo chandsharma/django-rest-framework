@@ -1,0 +1,7 @@
+from django.urls import path, include
+from . import views
+
+urlpatterns = [
+    path('',views.test_api) , #.../api/
+    path('product/',include('products.urls'))
+]
